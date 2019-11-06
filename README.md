@@ -4,10 +4,12 @@ The objective of this lab is to implement the rest of the [static type checking]
 
   * infix expressions
   * unary expressions
-  * method calls
+  * `new` expressions
+  * method invocation
   * if-statements
   * while-statements
   * do-while-statements
+  * return statements
 
 The other objective is to test the fitness of the tests with mutation analysis. 
 
@@ -21,14 +23,17 @@ Review carefully the [type checking](https://bitbucket.org/byucs329/byu-cs-329-l
 
 ## Type Proofs
 
-Implement the dynamic test generation for the static type proof for the following language features using a mock for the symbol table. 
+Implement the dynamic test generation for the static type proof for the following language features. 
 
-  * Infix expressions
-  * Unary expressions
-  * Method calls
-  * If-statements
-  * While-statements
-  * Do-while-statements
+  * `InfixExpression`
+  * `PrefixExpression`
+  * `ParenthesizedExpression`
+  * `ClassInstanceCreation`
+  * `MethodInvocation`
+  * `IfStatement`
+  * `WhileStatement`
+  * `DoStatement`
+  * `ReturnStatement`
 
 ## Testing your test code?
 
@@ -42,11 +47,13 @@ Create a pull request when the lab is done. Submit to Canvas the URL of the repo
 
 | Item | Point Value |
 | ------- | ----------- |
-| Infix Expressions | 15 |
-| Unary Expressions | 15 |
-| Method calls | 25 |
-| If-statements | 15 |
-| While-statements | 15 |
-| Do-while-statements | 15 | 
-| Sufficient tests to kill mutants | 70 | 
+| `InfixExpressions` | 20 |
+| `PrefixExpressions` | 5 |
+| `ParenthesizedExpressions` | 5 |
+| `MethodInvocation` | 20 |
+| `IfStatement` | 15 |
+| `WhileStatement` | 15 |
+| `DoStatement` | 15 | 
+| `ReturnStatement` | 5 |
+| Sufficient tests to kill mutants with `NEW_DEFAULT` and `RETURN_VALS` or justification | 70 | 
 | Style, documentation, naming conventions, test organization, readability, etc. | 30 | 
