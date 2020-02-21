@@ -37,7 +37,7 @@ Implement the dynamic test generation for the static type proof for the followin
 
 ## Testing your test code?
 
-Write any tests deemed sufficient to cover the implementation of the type-checker to create an appropriate regression test suite. Analyze the fitness of the regression tests using [PIT](http://pitest.org) for mutations analysis with the `NEW_DEFUALT` group and `RETURN_VALS` as mutators. Add tests to kill all mutants or argue why a mutant cannot be killed. Clearly indicate where the explanations are located in the pull request.
+Write any tests deemed sufficient to cover the implementation of the type-checker to create an appropriate regression test suite. Analyze the fitness of the regression tests using [PIT](http://pitest.org) for mutations analysis with the `NEW_DEFAULT` group and `RETURN_VALS` as mutators. Add tests to kill all mutants or argue why a mutant cannot be killed. Clearly indicate where the explanations are located in the pull request.
 
 # What to turn in?
 
