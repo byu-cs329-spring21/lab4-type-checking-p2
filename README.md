@@ -53,7 +53,7 @@ Write a minimum set of regression tests to cover the behavior of the type checke
 
 Analyze the fitness of the regression test suite using [PIT](http://pitest.org) for mutations analysis with the `DEFAULT` group and the added `RETURN_VALS` as mutators. The `pom.xml` is already configured for the PIT analysis. That analysis is run with `mvn test org.pitest:pitest-maven:mutationCoverage`. The report is in the `./target/pit-reports` directory organized by time-stamp. 
 
-Add tests to kill all mutants or argue why a mutant cannot be killed. Clearly indicate where the explanations are located in the pull request.
+Add tests to kill all mutants or argue why a mutant cannot be killed. Clearly indicate where the explanations are located in the pull request. Note that the analysis covers everything in the `edu.byu.cs329.typechecker` package so additional tests for the `SymbolTableBuilder` may be required.
 
 # What to turn in?
 
@@ -63,18 +63,12 @@ Create a pull request when the lab is done. Submit to Canvas the URL of the repo
 
 | Item | Point Value |
 | ------- | ----------- |
-| `ReturnStatement:void` | 10 | 
-| `ReturnStatement:void` tests| 15 |
-| `ExpressionStatement:void` for `Assignment` | 10 | 
-| `ExpressionStatement:void` for `Assignment` tests | 15 | 
-| `PrefixExpression:boolean` | 10 |
-| `PrefixExpression:boolean` tests | 15 |
-| `InfixExpression:int` | 10 |
-| `InfixExpression:int` tests | 15 |
-| `InfixExpression:boolean` | 10 | 
-| `InfixExpression:boolean` tests | 15 | 
-| `IfStatement:void` | 10 |
-| `IfStatement:void` tests | 15 |
-| `WhileStatement:void` | 10 | 
-| `WhileStatement:void` tests | 15 | 
+| `FieldAccess:<T>` | 10 | 
+| `FieldAccess:<T>` tests tests| 15 |
+| `QualifiedName:<T>`| 10 | 
+| `QualifiedName:<T>` tests for `Assignment` tests | 15 | 
+| `MethodInvocation:<T>` | 10 |
+| `MethodInvocation:<T>` tests | 15 |
+| Tests to test the dynamic tests | 50 |
+| PIT Mutation Analysis | 50 |
 | Style, documentation, naming conventions, test organization, readability, etc. | 25 |
