@@ -51,7 +51,7 @@ Write a minimum set of regression tests to cover the behavior of the type checke
 
 ## PIT Mutation Analysis
 
-Analyze the fitness of the regression test suite using [PIT](http://pitest.org) for mutations analysis with the `DEFAULT` group and the added `RETURN_VALS` as mutators. The `pom.xml` is already configured for the PIT analysis. That analysis is run with `mvn test org.pitest:pitest-maven:mutationCoverage`. The report is in the `./target/pit-reports` directory organized by time-stamp. 
+Analyze the fitness of the regression test suite using [PIT](http://pitest.org) for mutations analysis with the `STRONGER` group. The `pom.xml` is already configured for the PIT analysis. That analysis is run with `mvn test org.pitest:pitest-maven:mutationCoverage`. The report is in the `./target/pit-reports` directory organized by time-stamp. 
 
 Add tests to kill all mutants or argue why a mutant cannot be killed. Clearly indicate where the explanations are located in the pull request. Note that the analysis covers everything in the `edu.byu.cs329.typechecker` package so additional tests for the `SymbolTableBuilder` may be required.
 
