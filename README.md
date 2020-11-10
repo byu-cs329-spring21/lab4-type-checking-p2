@@ -64,9 +64,9 @@ Create a pull request when the lab is done. Submit to Canvas the URL of the repo
 | Item | Point Value |
 | ------- | ----------- |
 | `FieldAccess:<T>` | 10 | 
-| `FieldAccess:<T>` tests tests| 15 |
+| `FieldAccess:<T>` tests| 15 |
 | `QualifiedName:<T>`| 10 | 
-| `QualifiedName:<T>` tests for `Assignment` tests | 15 | 
+| `QualifiedName:<T>` tests | 15 | 
 | `MethodInvocation:<T>` | 10 |
 | `MethodInvocation:<T>` tests | 15 |
 | Tests to test the dynamic tests | 50 |
