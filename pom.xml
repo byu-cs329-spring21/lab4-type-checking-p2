@@ -29,6 +29,7 @@
 		<junit.standalone.version>1.7.0-M1</junit.standalone.version>
 		<mockito.version>3.5.10</mockito.version>
 		<jacoco.version>0.8.6</jacoco.version>
+		<pitest.version>1.5.2</pitest.version>
 	</properties>
 
 	<dependencies>
@@ -171,6 +172,25 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<plugin>
+				<groupId>org.pitest</groupId>
+				<artifactId>pitest-maven</artifactId>
+				<version>${pitest.version}</version>
+				<dependencies>
+          <dependency>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-junit5-plugin</artifactId>
+            <version>0.12</version>
+          </dependency>
+				</dependencies>
+				<configuration>
+					<mutators>
+							<mutator>STRONGER</mutator>
+					</mutators>
+			</configuration>
+		 </plugin>
+
 		</plugins>
 	</build>
 
