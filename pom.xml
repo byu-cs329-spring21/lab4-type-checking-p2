@@ -5,10 +5,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>edu.byu.cs329</groupId>
-	<artifactId>lab3-type-checking-p1</artifactId>
+	<artifactId>lab4-type-checking-p2</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
-	<name>lab3-type-checking-p1</name>
+	<name>lab4-type-checking-p2</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
